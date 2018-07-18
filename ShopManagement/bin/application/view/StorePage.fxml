@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="720.0" prefWidth="1109.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.StorePageController">
+   <children>
+      <TableView fx:id="tableViewList" editable="true" layoutX="14.0" layoutY="92.0" prefHeight="465.0" prefWidth="715.0">
+        <columns>
+          <TableColumn fx:id="nameCol" prefWidth="144.0" text="Name" />
+            <TableColumn fx:id="idCol" prefWidth="138.0" text="ID No." />
+            <TableColumn fx:id="availableCol" prefWidth="101.0" text="Availabe" />
+            <TableColumn fx:id="priceCol" prefWidth="112.0" text="Price" />
+            <TableColumn fx:id="quantityCol" onEditCommit="#onEditChange" prefWidth="87.0" text="Quantity" />
+            <TableColumn fx:id="totalAmountCol" prefWidth="132.0" text="Total Amount" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonEdit" layoutX="205.0" layoutY="581.0" mnemonicParsing="false" onAction="#editButtonClick" prefHeight="25.0" prefWidth="51.0" text="Edit" />
+      <Button fx:id="buttonDelete" layoutX="308.0" layoutY="581.0" mnemonicParsing="false" onAction="#deleteButtonClick" text="Delete" />
+      <Button fx:id="buttonSell" disable="true" layoutX="424.0" layoutY="581.0" mnemonicParsing="false" onAction="#sellButtonClick" prefHeight="25.0" prefWidth="52.0" text="Sell" />
+      <Button fx:id="buttonAdd" layoutX="538.0" layoutY="581.0" mnemonicParsing="false" onAction="#buttonAddClick" prefHeight="25.0" prefWidth="52.0" text="Add" />
+      <Button fx:id="buttonBack" layoutX="111.0" layoutY="581.0" mnemonicParsing="false" onAction="#buttonBackClick" prefHeight="25.0" prefWidth="51.0" text="Back" />
+      <Label layoutX="467.0" layoutY="30.0" text="Search" />
+      <TextField fx:id="filterField" layoutX="558.0" layoutY="25.0" promptText="Search" />
+      <Label fx:id="labelNameOfProduct" layoutX="780.0" layoutY="93.0" text="Name" visible="false" />
+      <Label fx:id="labelIDOfProduct" layoutX="780.0" layoutY="131.0" text="ID No" visible="false" />
+      <Label fx:id="labelAvailableOfProduct" layoutX="780.0" layoutY="172.0" text="Available" visible="false" />
+      <Label fx:id="labelPriceOfProduct" layoutX="780.0" layoutY="213.0" text="Price" visible="false" />
+      <TextField fx:id="textNameOfProduct" layoutX="883.0" layoutY="88.0" visible="false" />
+      <TextField fx:id="textIDOfProduct" layoutX="882.0" layoutY="126.0" visible="false" />
+      <TextField fx:id="textAvailableOfProduct" layoutX="882.0" layoutY="167.0" promptText="Integer Value" visible="false" />
+      <TextField fx:id="textPriceOfProduct" layoutX="883.0" layoutY="209.0" promptText="Numerical Value only" visible="false" />
+      <Button fx:id="buttonAddProduct" layoutX="809.0" layoutY="287.0" mnemonicParsing="false" onAction="#buttonAddProductClick" text="Add" visible="false" />
+      <Button fx:id="buttonCancelProduct" layoutX="959.0" layoutY="287.0" mnemonicParsing="false" onAction="#buttonCancelProductClick" text="Cancel" visible="false" />
+      <Button fx:id="buttonUpdate" layoutX="809.0" layoutY="287.0" mnemonicParsing="false" onAction="#updateProductButtonClick" text="Update" visible="false" />
+      <Label fx:id="labelUserIDName" layoutX="32.0" layoutY="30.0" textFill="#eb0f0f" />
+      <Label fx:id="labelDate" layoutX="200.0" layoutY="30.0" />
+      <AnchorPane fx:id="anchor" layoutX="733.0" prefHeight="981.0" prefWidth="377.0" visible="false">
+         <children>
+            <TableView fx:id="tableViewSell" layoutX="6.0" layoutY="294.0" prefHeight="236.0" prefWidth="366.0">
+               <columns>
+                  <TableColumn fx:id="columnOne" prefWidth="99.0" text="Name" />
+                  <TableColumn fx:id="columnTwo" prefWidth="93.0" text="Quantity" />
+                  <TableColumn fx:id="columnThree" prefWidth="79.0" text="Price" />
+                  <TableColumn fx:id="columnFour" onEditCommit="#onEditChangeSellTabel" prefWidth="101.0" text="Service" />
+               </columns>
+            </TableView>
+            <Label fx:id="labelAmountText" layoutX="8.0" layoutY="535.0" text="Total Amount" textFill="#dd0606" />
+            <Label fx:id="labelCustomerType" layoutX="19.0" layoutY="210.0" text="Customer Type:" />
+            <RadioButton fx:id="radioWholeSaler" layoutX="251.0" layoutY="209.0" mnemonicParsing="false" text="Wholesaler" />
+            <RadioButton fx:id="radioRetailer" layoutX="155.0" layoutY="209.0" mnemonicParsing="false" text="Retailer" />
+            <Label fx:id="labelAddress" layoutX="89.0" layoutY="80.0" text="Address" />
+            <Label fx:id="labelAmount" layoutX="204.0" layoutY="535.0" prefHeight="16.0" prefWidth="94.0" textFill="#d00e0e" />
+            <TextField fx:id="textPhone" layoutX="166.0" layoutY="128.0" />
+            <TextField fx:id="textAddress" layoutX="166.0" layoutY="77.0" />
+            <TextField fx:id="textName" layoutX="167.0" layoutY="28.0" />
+            <Label fx:id="labelPhone" layoutX="81.0" layoutY="132.0" text="Phone No" />
+            <Label fx:id="labelName" layoutX="37.0" layoutY="32.0" text="Customer Name" />
+            <Button fx:id="buttinOK" layoutX="171.0" layoutY="580.0" mnemonicParsing="false" onAction="#buttonOKClick" text="OK" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

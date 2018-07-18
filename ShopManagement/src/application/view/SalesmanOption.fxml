@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.SalesmanOptionController">
+   <children>
+      <Button fx:id="buttonStore" layoutX="206.0" layoutY="88.0" mnemonicParsing="false" onAction="#buttonStoreClick" prefHeight="63.0" prefWidth="138.0" text="Store" />
+      <Button fx:id="buttonSellHistory" layoutX="206.0" layoutY="199.0" mnemonicParsing="false" onAction="#buttonSellHistoryClick" prefHeight="63.0" prefWidth="138.0" text="Show Sell History" />
+      <Label fx:id="labelChangePassword" layoutX="454.0" layoutY="354.0" onMouseClicked="#changePasswordClick" text="Change Password" textFill="#ee0808" />
+      <Label fx:id="labelAbout" layoutX="48.0" layoutY="46.0" onMouseClicked="#labelAboutClick" text="About" textFill="#eb0808" />
+      <Button fx:id="buttonBack" layoutX="39.0" layoutY="342.0" mnemonicParsing="false" onAction="#buttonBackClick" text="Back" />
+   </children>
+</AnchorPane>

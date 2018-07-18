@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="524.0" prefWidth="692.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.CreateNewACCController">
+   <children>
+      <Label layoutX="54.0" layoutY="55.0" text="Name*" />
+      <Label layoutX="53.0" layoutY="93.0" text="Care Of*" />
+      <Label layoutX="53.0" layoutY="132.0" text="Address*" />
+      <Label layoutX="52.0" layoutY="174.0" text="Date of Birth*" />
+      <Label layoutX="52.0" layoutY="217.0" text="NID No*" />
+      <Label layoutX="51.0" layoutY="262.0" text="Phone No*" />
+      <TextField fx:id="textFieldName" layoutX="137.0" layoutY="51.0" />
+      <TextField fx:id="textFieldCareOf" layoutX="137.0" layoutY="89.0" />
+      <TextField fx:id="textFieldAddress" layoutX="137.0" layoutY="128.0" />
+      <TextField fx:id="textFieldNidNo" layoutX="137.0" layoutY="213.0" />
+      <TextField fx:id="textFieldPhone" layoutX="137.0" layoutY="258.0" />
+      <DatePicker fx:id="datepicker" layoutX="137.0" layoutY="170.0" prefHeight="25.0" prefWidth="149.0" />
+      <Label layoutX="53.0" layoutY="356.0" text="UserID*" />
+      <Label layoutX="53.0" layoutY="393.0" text="Password*" />
+      <Label layoutX="53.0" layoutY="434.0" text="Confirm Password*" />
+      <TextField fx:id="textFieldUserId" layoutX="137.0" layoutY="352.0" />
+      <PasswordField fx:id="passwordField" layoutX="137.0" layoutY="389.0" />
+      <PasswordField fx:id="passwordFieldConfirm" layoutX="181.0" layoutY="430.0" />
+      <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="180.0" layoutX="460.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="labelImg" layoutX="495.0" layoutY="85.0" text="use 180*200 pixel" textFill="#f20606">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonUpload" layoutX="532.0" layoutY="201.0" mnemonicParsing="false" onAction="#buttonUploadClick" text="Upload" />
+      <Button fx:id="buttonSubmit" layoutX="534.0" layoutY="476.0" mnemonicParsing="false" onAction="#buttonSubmitClick" text="Submit" />
+      <Button fx:id="buttonBack" layoutX="65.0" layoutY="476.0" mnemonicParsing="false" onAction="#buttonBackClick" text="Back" />
+   </children>
+</AnchorPane>

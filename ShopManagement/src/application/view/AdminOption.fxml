@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="444.0" prefWidth="577.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.view.AdminOptionController">
+   <children>
+      <Button fx:id="buttonStore" layoutX="196.0" layoutY="63.0" mnemonicParsing="false" onAction="#buttonStoreClick" prefHeight="87.0" prefWidth="150.0" text="Store" />
+      <Button fx:id="buttonEmployee" layoutX="196.0" layoutY="179.0" mnemonicParsing="false" onAction="#buttonEmployeeClick" prefHeight="87.0" prefWidth="150.0" text="Employee" />
+      <Button fx:id="buttonDaily" layoutX="196.0" layoutY="303.0" mnemonicParsing="false" onAction="#buttonDailyClick" prefHeight="87.0" prefWidth="150.0" text="Daily Notes" />
+      <Button fx:id="buttonBack" layoutX="28.0" layoutY="398.0" mnemonicParsing="false" onAction="#buttonBackClick" text="Back" />
+      <Label fx:id="labelNotifications" layoutX="410.0" layoutY="46.0" onMouseClicked="#labelNotificationClick" prefHeight="25.0" prefWidth="150.0" style="-fx-text-fill: red;" />
+      <Button fx:id="buttonChangePassword" layoutX="418.0" layoutY="398.0" mnemonicParsing="false" onAction="#buttonChangePasswordClick" text="Change Password" />
+      <Label fx:id="labelAbout" layoutX="28.0" layoutY="51.0" onMouseClicked="#labelAboutClick" prefHeight="16.0" prefWidth="50.0" text="About" textFill="#f80000" />
+   </children>
+</Pane>
