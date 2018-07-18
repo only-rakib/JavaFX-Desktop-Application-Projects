@@ -1,2 +1,2 @@
 # JavaFX-Desktop-Application-Projects
-This all applications are developed my me in Java FX . 
+This all applications are developed by me in Java FX . 
